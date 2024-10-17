@@ -5,7 +5,7 @@ Module Module1
     Public conn As New MySqlConnection
 
     Public Sub DbConnect()
-        Dim conn As New MySqlConnection
+
         Dim dbname As String = "it2a"
         Dim username As String = "root"
         Dim password As String = "admin" 'mysql server pwd
@@ -15,7 +15,7 @@ Module Module1
         If Not conn Is Nothing Then
             conn.Close()
             'establish new connection
-            conn.ConnectionString = "server" & server & ";user id =" & username & ";password =" & password & ";database=" & dbname & ""
+            conn.ConnectionString = "server=" & server & ";user id =" & username & ";password =" & password & ";database=" & dbname & ""
             Try
                 conn.Open() 'open connection
                 MsgBox("connected")

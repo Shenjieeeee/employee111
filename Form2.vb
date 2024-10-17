@@ -1,4 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
+
 Public Class Form2
     Dim cmd As New MySqlCommand
     Dim result As Integer
@@ -15,6 +16,7 @@ Public Class Form2
         username = txtusername.Text
         password = txtpassword.Text
         Try
+
             With cmd
                 .Connection = conn
                 .CommandText = "INSERT INTO employee(" _

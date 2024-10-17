@@ -35,7 +35,7 @@ Partial Class Form2
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(69, 83)
+        Me.Label1.Location = New System.Drawing.Point(107, 83)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(75, 16)
@@ -45,7 +45,7 @@ Partial Class Form2
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(69, 132)
+        Me.Label2.Location = New System.Drawing.Point(102, 132)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(83, 16)
@@ -55,7 +55,7 @@ Partial Class Form2
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(69, 187)
+        Me.Label3.Location = New System.Drawing.Point(102, 184)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(80, 16)
@@ -64,7 +64,7 @@ Partial Class Form2
         '
         'txtfullname
         '
-        Me.txtfullname.Location = New System.Drawing.Point(166, 83)
+        Me.txtfullname.Location = New System.Drawing.Point(203, 80)
         Me.txtfullname.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtfullname.Name = "txtfullname"
         Me.txtfullname.Size = New System.Drawing.Size(148, 22)
@@ -72,7 +72,7 @@ Partial Class Form2
         '
         'txtusername
         '
-        Me.txtusername.Location = New System.Drawing.Point(166, 132)
+        Me.txtusername.Location = New System.Drawing.Point(203, 129)
         Me.txtusername.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtusername.Name = "txtusername"
         Me.txtusername.Size = New System.Drawing.Size(148, 22)
@@ -80,7 +80,7 @@ Partial Class Form2
         '
         'txtpassword
         '
-        Me.txtpassword.Location = New System.Drawing.Point(166, 184)
+        Me.txtpassword.Location = New System.Drawing.Point(203, 181)
         Me.txtpassword.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtpassword.Name = "txtpassword"
         Me.txtpassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -89,7 +89,7 @@ Partial Class Form2
         '
         'btnsave
         '
-        Me.btnsave.Location = New System.Drawing.Point(93, 276)
+        Me.btnsave.Location = New System.Drawing.Point(130, 249)
         Me.btnsave.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnsave.Name = "btnsave"
         Me.btnsave.Size = New System.Drawing.Size(112, 28)
@@ -99,7 +99,7 @@ Partial Class Form2
         '
         'btnback
         '
-        Me.btnback.Location = New System.Drawing.Point(263, 276)
+        Me.btnback.Location = New System.Drawing.Point(250, 249)
         Me.btnback.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnback.Name = "btnback"
         Me.btnback.Size = New System.Drawing.Size(112, 28)
@@ -112,6 +112,7 @@ Partial Class Form2
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(517, 370)
+        Me.ControlBox = False
         Me.Controls.Add(Me.btnback)
         Me.Controls.Add(Me.btnsave)
         Me.Controls.Add(Me.txtpassword)
@@ -123,7 +124,7 @@ Partial Class Form2
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Form2"
-        Me.Text = "Form2"
+        Me.Text = "Add User"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

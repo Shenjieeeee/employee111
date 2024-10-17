@@ -32,7 +32,7 @@ Partial Class Form1
         'btnadd
         '
         Me.btnadd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnadd.Location = New System.Drawing.Point(85, 71)
+        Me.btnadd.Location = New System.Drawing.Point(46, 123)
         Me.btnadd.Name = "btnadd"
         Me.btnadd.Size = New System.Drawing.Size(113, 23)
         Me.btnadd.TabIndex = 0
@@ -42,7 +42,7 @@ Partial Class Form1
         'btnload
         '
         Me.btnload.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnload.Location = New System.Drawing.Point(85, 110)
+        Me.btnload.Location = New System.Drawing.Point(46, 162)
         Me.btnload.Name = "btnload"
         Me.btnload.Size = New System.Drawing.Size(113, 23)
         Me.btnload.TabIndex = 1
@@ -52,7 +52,7 @@ Partial Class Form1
         'btnclose
         '
         Me.btnclose.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnclose.Location = New System.Drawing.Point(85, 157)
+        Me.btnclose.Location = New System.Drawing.Point(46, 209)
         Me.btnclose.Name = "btnclose"
         Me.btnclose.Size = New System.Drawing.Size(113, 23)
         Me.btnclose.TabIndex = 2
@@ -64,20 +64,21 @@ Partial Class Form1
         Me.dataRecord.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dataRecord.Location = New System.Drawing.Point(214, 71)
         Me.dataRecord.Name = "dataRecord"
-        Me.dataRecord.Size = New System.Drawing.Size(240, 150)
+        Me.dataRecord.Size = New System.Drawing.Size(385, 289)
         Me.dataRecord.TabIndex = 3
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(598, 450)
+        Me.ClientSize = New System.Drawing.Size(649, 412)
+        Me.ControlBox = False
         Me.Controls.Add(Me.dataRecord)
         Me.Controls.Add(Me.btnclose)
         Me.Controls.Add(Me.btnload)
         Me.Controls.Add(Me.btnadd)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Main"
         CType(Me.dataRecord, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

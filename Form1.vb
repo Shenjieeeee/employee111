@@ -1,11 +1,11 @@
 ﻿Imports MySql.Data.MySqlClient
-Imports module1
+
 
 Public Class Form1
     Dim sqlQuery As String
-    Dim da As mysqldataadapter
+    Dim da As MySqlDataAdapter
     Dim dt As DataTable
-    Dim conn As New MySqlConnection
+
     Private Sub dataRecord_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dataRecord.CellContentClick
         DbConnect()
     End Sub
@@ -13,17 +13,17 @@ Public Class Form1
     Private Sub btnload_Click(sender As Object, e As EventArgs) Handles btnload.Click
 
         Try
-            conn.Open()
+
             sqlQuery = "Select * from employee"
             da = New MySqlDataAdapter(sqlQuery, conn)
             dt = New DataTable
             da.Fill(dt)
             dataRecord.DataSource = dt
+            dataRecord.AutoSizeColumnsMode = DataGridViewAutoSizeColumnMode.Fill
+            conn.Close()
         Catch ex As Exception
-
+            MsgBox(ex.Message)
         End Try
-        conn.Close()
-
 
     End Sub
 
@@ -31,34 +31,14 @@ Public Class Form1
         DbConnect()
 
     End Sub
-    Public Sub DbConnect()
-        Dim conn As New MySqlConnection
-        Dim dbname As String = "it2a"
-        Dim username As String = "root"
-        Dim password As String = "admin" 'mysql server pwd
-        Dim server As String = "127.0.0.1" 'pc ipadd'
-
-        'check if connection is open
-        If Not conn Is Nothing Then
-            conn.Close()
-            'establish new connection
-            conn.ConnectionString = "server" & server & ";user id =" & username & ";password =" & password & ";database=" & dbname & ""
-            Try
-                conn.Open() 'open connection
-                MsgBox("connected")
-
-            Catch ex As Exception
-                MsgBox(ex.Message)
-
-
-            End Try
-
-        End If
-    End Sub
 
     Private Sub btnadd_Click(sender As Object, e As EventArgs) Handles btnadd.Click
         Form2.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub btnclose_Click(sender As Object, e As EventArgs) Handles btnclose.Click
+        Application.Exit()
     End Sub
 End Class
 
